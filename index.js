@@ -1,9 +1,7 @@
-//var udp           = require('../../udp');
 var instance_skel = require('../../instance_skel');
 var wol           = require('wakeonlan');
 var debug;
 var log;
-
 
 function instance(system, id, config) {
 	var self = this;
@@ -88,15 +86,6 @@ instance.prototype.actions = function(system) {
 					default: '',
 					regex: '/^([0-9a-f]{2}([:.-]{0,1}|$)){6}$/i'
 				},
-				/*
-				{
-					type: 'textinput',
-					id: 'id_ip',
-					label: 'Destination IP or IP range:',
-					default: '',
-					regex: self.REGEX_IP
-				},
-				*/
 				{
 					type: 'textinput',
 					id: 'id_port',
@@ -104,14 +93,6 @@ instance.prototype.actions = function(system) {
 					default: '9',
 					regex: self.REGEX_PORT
 				},
-				/*
-				{
-					type: 'dropdown',
-					id: 'id_interface',
-					label: 'Send from interface:',
-					choices: ifaces_options
-				},
-				*/
 				{
 					type: 'textinput',
 					id: 'id_count',
@@ -138,15 +119,6 @@ instance.prototype.action = function(action) {
 	var port;
 	var simpre = false;
 	var advanced = false;
-	/*
-	var options = {
-		'from':     null, // Source address for socket. If not specified, packets will be sent out to the broadcast address of all IPv4 interfaces.
-		'port':     null, // Port to send to. Default : 9
-		'count':    null, // Number of packets to send. Default : 3
-		'address':  null, // The destination address. Default : '255.255.255.255'
-		'interval': null  // Interval between packets. Default : 100
-	};
-	*/
 	
 	var _regex_mac  = new RegExp(/^[0-9a-fA-F]{12}$/);
 
