@@ -1,5 +1,5 @@
 {
-	"name": "wake-on-lan",
+	"name": "wakeonlan",
 	"version": "1.0.0",
 	"api_version": "1.0.0",
 	"description": "Wake-on-LAN",
@@ -10,19 +10,19 @@
 	"manufacturer": "Generic",
 	"product": "Wake-on-LAN",
 	"shortname": "Wake-on-LAN",
-	"homepage": "https://github.com/albertorighetto/companion-module-wake-on-lan",
+	"homepage": "https://github.com/albertorighetto/companion-module-wakeonlan",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/albertorighetto/companion-module-wake-on-lan.git"
+		"url": "git+https://github.com/albertorighetto/companion-module-wakeonlan.git"
 	},
 	"author": "Alberto Righetto",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/albertorighetto/companion-module-wake-on-lan/issues"
+		"url": "https://github.com/albertorighetto/companion-module-wakeonlan/issues"
 	},
 	"dependencies": {
 		"wakeonlan": "^0.1.0"
