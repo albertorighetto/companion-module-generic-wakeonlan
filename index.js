@@ -38,7 +38,6 @@ instance.prototype.config_fields = function () {
 			type: 'text',
 			id: 'info',
 			label: 'Information',
-			width: 12,
 			value: 'Wake-on-LAN instance does not require any configuration'
 		}
 	]
@@ -115,9 +114,7 @@ instance.prototype.actions = function(system) {
 instance.prototype.action = function(action) {
 	var self = this;
 	var mac;
-	var ip;
-	var port;
-	var simpre = false;
+	var simple = false;
 	var advanced = false;
 	
 	var _regex_mac  = new RegExp(/^[0-9a-fA-F]{12}$/);
@@ -143,12 +140,9 @@ instance.prototype.action = function(action) {
 	}
 	
 	if (advanced) {
-		console.log("ADVANCED SEND");
 		var options = {
-			//'from':     action.options.from,
       'port':     action.options.id_port,
       'count':    action.options.id_count,
-      //'address':  action.options.id_ip,
       'interval': action.options.id_interval
 		};
 		wol(mac, options);
