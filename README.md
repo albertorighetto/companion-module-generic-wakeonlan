@@ -1,7 +1,7 @@
 ## companion-module-wakeonlan
 
 Broadcasts Wake-on-LAN magic packet from all network interfaces.
-https://github.com/albertorighetto/companion-module-wake-on-lan/
+https://github.com/albertorighetto/companion-module-wakeonlan/
 
 ### Actions
 
