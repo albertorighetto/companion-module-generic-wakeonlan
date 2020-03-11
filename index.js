@@ -38,6 +38,7 @@ instance.prototype.config_fields = function () {
 			type: 'text',
 			id: 'info',
 			label: 'Information',
+			width: 12,
 			value: 'Wake-on-LAN instance does not require any configuration'
 		}
 	]
